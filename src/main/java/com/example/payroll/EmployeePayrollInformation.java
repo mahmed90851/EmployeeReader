@@ -14,7 +14,7 @@ public class EmployeePayrollInformation {
             while((input = bufReader.readLine()) != null){
                 String[] substrings = input.split("\\|");
                 Employee e = new Employee(substrings[0], substrings[1], Double.parseDouble(substrings[2]), Double.parseDouble(substrings[3]));
-                System.out.printf("\nID & Name: %s %-30s Salary: $%.2f",
+                System.out.printf("\nID: %s Name: %-30s Gross Pay: $%.2f",
                         e.getEmployeeId(), e.getEmployeeName(), e.getGrossPay() );
 
             }
